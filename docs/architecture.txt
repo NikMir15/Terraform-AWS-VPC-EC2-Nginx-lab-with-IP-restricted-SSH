@@ -1,0 +1,17 @@
+Architecture (AWS - Terraform)
+
+Internet
+  |
+  |  HTTP (80) from anywhere
+  |  SSH (22) only from my public IP
+  v
+[Security Group]
+  |
+  v
+[EC2 (Ubuntu 22.04 + Nginx)]
+  |
+  v
+[Public Subnet] ----> [Route Table] ----> [Internet Gateway] ----> Internet
+        |
+        v
+      [VPC]

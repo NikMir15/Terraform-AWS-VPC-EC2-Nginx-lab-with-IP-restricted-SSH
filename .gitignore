@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+crash.*.log
+.terraform.lock.hcl
+
+# Keys (IMPORTANT)
+*.pem
+*.pub
+key
+key.pem
+
+# OS / Editor
+.vscode/
+.DS_Store
+Thumbs.db
